@@ -1,0 +1,79 @@
+.main-slider {
+    padding-bottom: 90px;
+    .carousel-inner {
+        text-align: right;
+        img {
+            display: inline-block;
+            text-align: right;
+            margin-right: 8.5%;
+            min-height: 330px;
+        }
+    }
+    .carousel-caption {
+        max-width: 40%;
+        text-align: left;
+        left: 0.5%;
+        padding: 0;
+        bottom: 15%;
+        h2 {
+            top: 17px;
+            font-family: @helvetica-b;
+            font-size: 2.4rem;
+            margin-bottom: 25px;
+        }
+        p {
+            margin-top: 0;
+            font-family: @helvetica-md;
+            font-size: 1.16rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        button {
+            font-family: @helvetica-b;
+            font-size: 1.3rem;
+            padding: 8px 29px 8px 27px;
+            background-color: #8f8f8f;
+        }
+    }
+    .carousel-control {
+        background: none;
+        width: 10%;
+        height: 30%;
+        top: 20%;
+    }
+    .carousel-indicators {
+        margin-left: 0;
+        left: calc(~'100% - 150px');
+        bottom: 15.6%;
+        max-width: 150px;
+        text-align: right;
+        li {
+            border-radius: 0;
+            width: 23px;
+            height: 5px;
+            border: none;
+            background-color: #888888;
+            margin: 0 1.5px 0 0;
+            &.active {
+                background-color: #bebebe;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .main-slider {
+        .carousel-caption {
+            right: 0;
+            text-align: center;
+            max-width: none;
+        }
+        .carousel-inner {
+            img {
+                margin: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}

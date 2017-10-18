@@ -1,0 +1,47 @@
+.recent-work {
+    &__title {
+        font-family: @helvetica-b;
+        color: #171717;
+        font-size: 1.6rem;
+        padding-bottom: 16px;
+        margin-top: 0;
+        margin-bottom: 32px;
+        margin-left: 20px;
+        background: url(../img/border-img6px.png) repeat-x bottom center;
+    }
+    &__description {
+        padding: 0 21px 0 20px;
+    }
+    &__subtitle {
+        font-family: @helvetica-md;
+        font-size: 1.15rem;
+        color: @text-gray-light;
+        margin-bottom: 7px;
+        margin-top: -2px;
+    }
+    &__text {
+        font-family: @helvetica-md;
+        font-size: 1.15rem;
+        color: @text-gray;
+    }
+    &__posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .work {
+            width: 100%;
+            margin-bottom: 24px;
+            @media (min-width: @screen-xs) {
+                & {
+                    width: calc(~'100% / 2 - 10px');
+                }
+            }
+
+            @media (min-width: @screen-md) {
+                & {
+                    width: calc(~'100% / 3 - 15px');
+                }
+            }
+        }
+    }
+}

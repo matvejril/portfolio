@@ -1,0 +1,33 @@
+.footer {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    background-color: rgba(0,0,0,.1);
+    &__logo {
+        margin-top: -7px;
+        font-family: @ballpark;
+        font-size: 3.4rem;
+        color: #808080;
+    }
+    p {
+        font-family: @helvetica-md;
+        font-size: 1.15rem;
+        color: #808080;
+        margin-bottom: 3px;
+    }
+    span {
+        color: #b2b2b2;
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+
+
+@media all and (min-width: @screen-sm) {
+    .footer {
+        .copyright {
+            text-align: left;
+            margin-left: -20px;
+        }
+    }
+}

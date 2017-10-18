@@ -1,0 +1,79 @@
+.header {
+    padding-top: 15px;
+    &__logo {
+        font-family: @ballpark;
+        font-size: 3.7rem;
+    }
+    &__nav {
+        font-size: 1.3rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        li {
+            margin-right: 16px;
+            a {
+                padding: 7px 13px;
+                border-radius: 5px;
+                background-color: transparent;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.1)
+                }
+                &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+        .active {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+        }
+    }
+}
+.icon-bar {
+    background-color: #ffffff;
+}
+
+.search {
+    padding: 0;
+    white-space: nowrap;
+    background: #2a2a2a; /* Для старых браузров */
+    background: linear-gradient(to top, #2e2e2e, #2a2a2a);
+    border-radius: 15px;
+    max-width: 160px;
+    &__button {
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        outline: none;
+        &:hover {
+            color: #ffffff;
+        }
+        &:focus {
+            color: #ffffff;
+        }
+    }
+    &__input-group {
+        display: inline-block;
+        width: calc(~'100% - 50px');
+    }
+    &__input {
+        padding-left: 0;
+        width: 100% !important;;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        font-family: @helvetica-md;
+
+        display: inline-block;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .search {
+        max-width: 100%;
+    }
+}
